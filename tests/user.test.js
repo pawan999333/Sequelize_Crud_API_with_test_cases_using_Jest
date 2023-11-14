@@ -2,6 +2,7 @@ const app=require('../index')
 const request = require("supertest");
 const User=require('../models/user')
 
+
 const clearDatabase = async () => {
   let tables = [`Users`];
   tables.forEach(async (d) => {
