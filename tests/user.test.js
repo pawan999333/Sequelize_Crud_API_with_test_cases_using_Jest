@@ -44,14 +44,14 @@ describe("Crud Api test cases", () => {
     expect(res.status).toBe(200);
   });
 
-//   test("deleteUser", async () => {
-//     const res = await request(app).delete("/user/1").send({});
-//     expect(res.status).toBe(200);
-//   });
+  test("deleteUser", async () => {
+    const res = await request(app).delete("/user/1").send({});
+    expect(res.status).toBe(200);
+  });
 
 
-//  afterAll(async () => {
-//    await clearDatabase();
-//  });
+ afterAll(async () => {
+   await clearDatabase();
+ });
 
 });
